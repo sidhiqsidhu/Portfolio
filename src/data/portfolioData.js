@@ -1,4 +1,3 @@
-// Portfolio data with all the missing concepts filled in
 export const portfolioData = {
   personal: {
     name: "Mohammed Sidhiq M",
@@ -8,8 +7,11 @@ export const portfolioData = {
     email: "msidhiq335@gmail.com",
     phone: "+91 9566808659",
     location: "Tamil Nadu, India",
-    resume: "/assets/MOHAMMED SIDHIQ M Resume.pdf",
-    avatar: process.env.PUBLIC_URL + "public/assets/sid-pro.png",
+    // Recommended: rename the file to avoid spaces, or url-encode spaces.
+    resume: "/assets/MOHAMMED-SIDHIQ-M-Resume.pdf",
+    // Fixed avatar path: remove duplicate "public/" and add leading slash.
+    // If using CRA, process.env.PUBLIC_URL + '/assets/sid-pro.png' also works.
+    avatar: process.env.PUBLIC_URL + '/assets/sid-pro.png',
     yearsOfExperience: 1,
   },
 
@@ -164,7 +166,6 @@ export const portfolioData = {
       description: "Completed comprehensive full-stack development training",
       type: "achievement",
     },
-    
     {
       year: "2023",
       title: "Diploma in Computer Applications",
@@ -262,19 +263,6 @@ export const portfolioData = {
       image: "/assets/blog2.jpg",
       slug: "ai-web-development-future",
     },
-    
-    /*{
-      id: 3,
-      title: "Microservices vs Monoliths: Making the Right Choice",
-      excerpt: "A comprehensive guide to choosing between microservices and monolithic architecture for your next project.",
-      content: "Full article content here...",
-      author: "Mohammed Sidhiq M",
-      date: "2024-01-01",
-      readTime: "10 min read",
-      tags: ["Architecture", "Microservices", "Backend"],
-      image: "/assets/blog3.jpg",
-      slug: "microservices-vs-monoliths",
-    },*/
   ],
 
   services: [
@@ -299,7 +287,7 @@ export const portfolioData = {
     {
       title: "Database Management",
       description: "Efficient database design and SQL optimization for robust applications",
-      icon: "�️",
+      icon: "🗄️",
       features: ["SQL", "MySQL", "Database Design", "Data Optimization", "Query Performance"],
     },
   ],
