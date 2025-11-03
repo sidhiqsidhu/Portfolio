@@ -9,7 +9,7 @@ export const portfolioData = {
     phone: "+91 9566808659",
     location: "Tamil Nadu, India",
     resume: "/assets/MOHAMMED SIDHIQ M Resume.pdf",
-    avatar: process.env.PUBLIC_URL + "/assets/sid-pro.png",
+    avatar: process.env.PUBLIC_URL + "public/assets/sid-pro.png",
     yearsOfExperience: 1,
   },
 
